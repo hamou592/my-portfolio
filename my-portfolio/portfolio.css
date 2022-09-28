@@ -1,0 +1,386 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{/*this is for the font of the line*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+    scroll-behavior: smooth;
+}
+
+/*styling the head section*/
+
+.head{
+    background: rgb(7, 206, 116);
+    height: 32rem;
+}
+.head .nav{
+    align-items: center;
+    z-index: 100;
+}
+.head nav{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    left: 0;
+}
+.head .nav .logo{
+    padding: 0px 0px 0 60px ;
+    display:none;
+}
+.head .nav .logo a{ 
+    color: #fff;
+    text-decoration: none;
+}
+.head .nav ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 3rem;
+    padding: 8px 60px 0 0 ;
+}
+.head .nav ul li {
+    text-align: center;
+    padding: 0 0 10px 0 ;
+}
+.head .nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.head .nav ul li a:hover{
+    border-bottom: 1px #fff solid;
+}
+.close-btn{
+    display: none;
+}
+.head .content{
+    text-align: center;
+    padding-top:11.5rem;
+    letter-spacing: 3px;
+    line-height: 25px;
+}
+.head .content h3{
+    font-weight: 700;
+}
+.head .content h5{
+    color: #fff;
+}
+
+.head .scroll{
+    text-align: center;
+    margin-top: 14rem;
+}
+.head .scroll a{
+    color: #000;
+}
+.head .scroll span{
+    border: 1px solid ;
+    border-radius: 50%;
+}
+.head .scroll span:hover{
+    cursor: pointer;
+}
+/*styling the about page*/
+.about{
+    text-align: center;
+    padding: 70px 120px;
+    background: #293462;
+    z-index: -1;
+}
+.about h3{
+    font-size: 30px;
+    color: #fff;
+}
+.about p{
+    color:    rgba(255, 255, 255, 0.715);
+}
+.about img{
+    width: 10%;
+    margin: 20px 0;
+}
+.about p{
+    margin: 0 0 15px 0;
+}
+.skills{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    font-family: "Roboto",sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.skills .progress-title{
+    width: 100%;
+    height: auto;
+}
+
+.skills .progress-title h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.skills .progress-title .progress{
+    height: 20px;
+    background-color: #171b3c;
+    border-radius: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 2px #4f4c4c;
+    margin-bottom: 40px;
+    overflow: visible;
+    position: relative;
+}
+
+.skills .progress-title .progress .progress-bar{
+    border-radius: 20px;
+    animation:  animate-positive 3s 0s;
+    -webkit-animation: animate-positive 3s 0s;
+    -moz-animation: animate-positive 3s 0s;
+    -o-animation: animate-positive 3s 0s;
+}
+
+
+@keyframes animate-positive{
+    from{
+        width: 0%;
+    }
+}
+@-webkit-keyframes animate-positive{
+    from{
+        width: 0%;
+    }
+}
+@-moz-keyframes animate-positive{
+    from{
+        width: 0%;
+    }
+}
+@-o-keyframes animate-positive{
+    from{
+        width: 0%;
+    }
+}
+.about .check a{
+    text-decoration: none;
+    align-items: center;
+}
+.about .check a h3{
+    color: #A66CFF;
+    font-size: 20px;
+}
+.about .check a h3 span{
+    transform: translateY(20%);
+    font-size: 20px;
+}
+.work{
+    padding: 40px 70px;
+    background: rgb(7, 206, 116);
+}
+.work .title{
+    font-size: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.work .works{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.work .works .port{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 8rem;
+}
+.work .works .port:nth-child(3),.work .works .port:nth-child(4){
+    display: none;
+}
+.work .works .port .left img{
+    width: 100%;
+    border-radius: 80px;
+}
+
+.work .works .right h3{
+    font-size: 18px;
+}
+.work .works .right h5{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 12px;
+}
+.work .works button{
+    padding: 0.4rem 2rem;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.work .works button:hover{
+    background: #293462;
+}
+.work .works button a{
+    color: rgba(30, 25, 25, 0.826);
+    text-decoration: none;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.work .works button a span{
+    font-size: 15px;
+}
+.work .works button:hover a{
+    color: #fff;
+}
+.more{
+    text-align: center;
+    margin-top: 15px;
+}
+.more h5{
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 200;
+}
+.more h5:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.less{
+    text-align: center;
+    margin-top: 15px;
+    display: none;
+}
+.less h5{
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 200;
+}
+.less h5:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.contact{
+    text-align: center;
+    padding: 200px 0 150px;
+    background: #293462;
+}
+.contact h2{
+    font-size: 30px;
+}
+.contact h5{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px;
+    color: #fff;
+}
+.contact h3{
+    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+.contact .socials{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 0 150px ;
+}
+.contact .socials .social img{
+    width: 20%;
+}
+.contact .socials .social  h5{
+    font-size: 10px;
+}
+
+/*media query for tablettes*/
+@media screen and (max-width:900px){
+    .work{
+        padding: 40px 40px;
+    }
+    .work .works .port{
+        gap: 2.7rem;
+    }
+}
+@media screen and (max-width:715px){
+.head .nav ul{
+    padding-top: 40px;
+    flex-direction: column;
+    position:absolute;
+    top: 100%;
+    gap: 1rem;
+    padding: 0;
+    background: red;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+.head .nav .logo{
+    padding: 0px 0px 0 20px ;
+}
+.close-btn{
+    display: block;
+    padding-right: 40px;
+}
+.close-btn .menu{
+    display: block;
+    text-align: right;
+}
+.close-btn .close{
+    display: none;
+    text-align: right;
+}
+/*styling the about page*/
+.about{
+    padding: 70px 50px;
+}
+.about img{
+    width: 30%;
+}
+.work .works .port{
+    grid-template-columns:  1fr;
+    text-align: center;
+    gap: 1rem;
+}
+
+.work .works button{
+    padding: 0.4rem 1rem;
+}
+.contact .socials{
+    padding: 0 40px ;
+}
+.contact .socials .social img{
+    width: 30%;
+}
+}
+@media screen and (max-width:400px){
+    .work .works button{
+        padding: 0.2rem 0.4rem;
+    }
+    .work .works button a{
+        font-size: 10px;
+    }
+    .work .works button a span{
+        font-size: 10px;
+    }    
+    /*styling the about page*/
+    .about{
+        padding: 70px 20px;
+    }
+    .about img{
+        width: 30%;
+    }
+    .contact .socials{
+        padding: 0 10px ;
+    }
+    .contact .socials .social img{
+        width: 30%;
+    }
+}
